@@ -28,7 +28,7 @@ class ProductController extends Controller
     {
         request()->validate([
             'name' => 'required',
-            'detail' => 'required',
+            'details' => 'required',
         ]);
         Product::create($request->all());
 

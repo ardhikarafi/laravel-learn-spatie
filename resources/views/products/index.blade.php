@@ -34,7 +34,7 @@
 	    <tr>
 	        <td>{{ ++$i }}</td>
 	        <td>{{ $product->name }}</td>
-	        <td>{{ $product->detail }}</td>
+	        <td>{{ $product->details }}</td>
 	        <td>
                 <form action="{{ route('products.destroy',$product->id) }}" method="POST">
                     <a class="btn btn-info" href="{{ route('products.show',$product->id) }}">Show</a>
